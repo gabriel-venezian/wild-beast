@@ -1,6 +1,7 @@
 /**********************************/
 /* 1. CSS Reset
 /* 2. Structure
+/* 3. Header
 /**********************************/
 
 /**********************************/
@@ -56,10 +57,6 @@ img {
     "footer footer footer";
 }
 
-.header {
-  grid-area: header;
-}
-
 .sidenav {
   grid-area: sidenav;
 }
@@ -74,4 +71,41 @@ img {
 
 .footer {
   grid-area: footer;
+}
+
+/**********************************/
+/* 3. Header
+/**********************************/
+.header {
+  grid-area: header;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 3rem;
+}
+
+.header nav a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.8rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition: 0.1s;
+}
+
+.header nav a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  max-inline-size: 20rem;
 }
