@@ -195,7 +195,7 @@ img {
 /**********************************/
 .content {
   grid-area: content;
-  max-inline-size: 90rem;
+  max-inline-size: 96rem;
   margin-inline: auto;
   padding: 3rem;
   display: grid;
@@ -265,17 +265,17 @@ img {
 .characteristics .number,
 .characteristics .label {
   color: #b07dfb;
-  line-height: 1;
   margin-inline: auto;
 }
 
 .characteristics .number {
-  margin-block: 1rem;
   font-size: 4.8rem;
+  line-height: 1;
+  margin-block: 1rem;
 }
 
 .characteristics .label {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background: #fff;
   border-radius: 0 0 0.5rem 0.5rem;
   padding-block: 0.5rem;
