@@ -26,7 +26,8 @@ h2,
 p,
 ul,
 li,
-a {
+a,
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -46,6 +47,7 @@ a {
 
 img {
   display: block;
+  inline-size: 100%;
   max-inline-size: 100%;
   border-radius: 0.5rem;
 }
@@ -131,6 +133,122 @@ img {
 /**********************************/
 .content {
   grid-area: content;
+  max-inline-size: 90rem;
+  margin-inline: auto;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+.align-self-end {
+  align-self: end;
+}
+
+.row-span-2 {
+  grid-row: span 2;
+}
+
+.content p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  letter-spacing: 0.005rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.information p + p {
+  margin-block-start: 3rem;
+}
+
+.title {
+  color: #b07dfb;
+}
+
+.title h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.title span {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.characteristics {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 3rem;
+}
+
+.characteristics div {
+  inline-size: 8rem;
+  text-align: center;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 1.5rem 0rem rgba(44, 44, 44, 0.15);
+  position: relative;
+}
+
+.characteristics span {
+  display: block;
+  position: relative;
+  inset-block-start: 0.2rem;
+}
+
+.characteristics .number,
+.characteristics .label {
+  color: #b07dfb;
+  line-height: 1;
+  margin-inline: auto;
+}
+
+.characteristics .number {
+  margin-block: 1rem;
+  font-size: 4.8rem;
+}
+
+.characteristics .label {
+  font-size: 1.8rem;
+  background: #fff;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding-block: 0.5rem;
+}
+
+.content .highlight {
+  font-size: 1.4rem;
+  color: #b07dfb;
+  max-inline-size: 21.8rem;
+}
+
+.quote,
+.info-list {
+  align-self: start;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  box-shadow: 0.5rem 0.5rem 1.5rem 0rem rgba(44, 44, 44, 0.15);
+}
+
+.quote {
+  font-size: 2.4rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.info-list li {
+  font-size: 1.8rem;
+  font-family: "Courier New", Courier, monospace;
+  padding: 1.5rem;
+}
+
+.info-list li:not(:last-child) {
+  border-bottom: 0.2rem solid #b07dfb;
 }
 
 /**********************************/
