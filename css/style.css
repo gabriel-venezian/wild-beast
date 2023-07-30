@@ -3,6 +3,9 @@
 /* 2. Structure
 /* 3. Header
 /* 4. Sidenav
+/* 5. Content
+/* 6. Ads
+/* 7. Footer
 /**********************************/
 
 /**********************************/
@@ -44,6 +47,7 @@ a {
 img {
   display: block;
   max-inline-size: 100%;
+  border-radius: 0.5rem;
 }
 
 /**********************************/
@@ -56,18 +60,6 @@ img {
     "header header header"
     "sidenav content ads"
     "footer footer footer";
-}
-
-.content {
-  grid-area: content;
-}
-
-.ads {
-  grid-area: ads;
-}
-
-.footer {
-  grid-area: footer;
 }
 
 /**********************************/
@@ -132,4 +124,38 @@ img {
 
 .sidenav li a:hover {
   background: #b07dfb;
+}
+
+/**********************************/
+/* 5. Content
+/**********************************/
+.content {
+  grid-area: content;
+}
+
+/**********************************/
+/* 6. Ads
+/**********************************/
+.ads {
+  grid-area: ads;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+/**********************************/
+/* 7. Footer
+/**********************************/
+.footer {
+  grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 3rem;
 }
