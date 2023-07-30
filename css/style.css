@@ -4,7 +4,7 @@
 /* 3. Header
 /* 4. Sidenav
 /* 5. Content
-/* 6. Ads
+/* 6. Posts
 /* 7. Footer
 /**********************************/
 
@@ -60,7 +60,7 @@ img {
   grid-template-columns: minmax(16rem, 1fr) 3fr 30rem;
   grid-template-areas:
     "header header header"
-    "sidenav content ads"
+    "sidenav content posts"
     "footer footer footer";
 }
 
@@ -69,7 +69,7 @@ img {
     grid-template-areas:
       "header header header"
       "sidenav content content"
-      "sidenav ads ads"
+      "sidenav posts posts"
       "footer footer footer";
   }
 }
@@ -81,7 +81,7 @@ img {
       "header"
       "sidenav"
       "content"
-      "ads"
+      "posts"
       "footer";
   }
 }
@@ -320,10 +320,10 @@ img {
 }
 
 /**********************************/
-/* 6. Ads
+/* 6. Posts
 /**********************************/
-.ads {
-  grid-area: ads;
+.posts {
+  grid-area: posts;
   background: #fafbfc;
   display: grid;
   align-content: start;
